@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B67048AC-50AE-429B-AB55-71B96B554E71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M2Lib</RootNamespace>
+    <AssemblyName>M2Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Elements\Animation.cs" />
+    <Compile Include="Elements\AnimationLookup.cs" />
+    <Compile Include="Elements\AnimTextureLookup.cs" />
+    <Compile Include="Elements\ArrayRef.cs" />
+    <Compile Include="Elements\Attachment.cs" />
+    <Compile Include="Elements\AttachmentLookup.cs" />
+    <Compile Include="Elements\Bone.cs" />
+    <Compile Include="Elements\BoneLookup.cs" />
+    <Compile Include="Elements\BoundingNormal.cs" />
+    <Compile Include="Elements\BoundingTriangles.cs" />
+    <Compile Include="Elements\BoundingVertex.cs" />
+    <Compile Include="MyBinaryWriter.cs" />
+    <Compile Include="Structures\C2Vector.cs" />
+    <Compile Include="Structures\C3Vector.cs" />
+    <Compile Include="Elements\Camera.cs" />
+    <Compile Include="Elements\CameraLookup.cs" />
+    <Compile Include="Structures\CompQuat.cs" />
+    <Compile Include="Structures\CRange.cs" />
+    <Compile Include="Elements\Event.cs" />
+    <Compile Include="Elements\FakeAnimationBlock.cs" />
+    <Compile Include="Elements\Light.cs" />
+    <Compile Include="Elements\Material.cs" />
+    <Compile Include="Elements\ParticleEmitter.cs" />
+    <Compile Include="Elements\RibbonEmitter.cs" />
+    <Compile Include="SizeAttribute.cs" />
+    <Compile Include="Elements\SplineKey.cs" />
+    <Compile Include="Elements\SubmeshAnimation.cs" />
+    <Compile Include="Elements\Element.cs" />
+    <Compile Include="Elements\GlobalSequence.cs" />
+    <Compile Include="Elements\KeyBoneLookup.cs" />
+    <Compile Include="Structures\C4Quaternion.cs" />
+    <Compile Include="Elements\Track.cs" />
+    <Compile Include="Elements\Name.cs" />
+    <Compile Include="Elements\Texture.cs" />
+    <Compile Include="Elements\TextureLookup.cs" />
+    <Compile Include="Elements\TextureReplacement.cs" />
+    <Compile Include="Elements\TextureUnit.cs" />
+    <Compile Include="Elements\TrackBase.cs" />
+    <Compile Include="Elements\Transparency.cs" />
+    <Compile Include="Elements\TransparencyLookup.cs" />
+    <Compile Include="Elements\UVAnimation.cs" />
+    <Compile Include="Elements\Vertex.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="M2.cs" />
+    <Compile Include="M2Data.cs" />
+    <Compile Include="Structures\SVolume.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
