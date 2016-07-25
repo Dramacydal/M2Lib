@@ -55,6 +55,9 @@
     <Compile Include="Elements\BoundingNormal.cs" />
     <Compile Include="Elements\BoundingTriangles.cs" />
     <Compile Include="Elements\BoundingVertex.cs" />
+    <Compile Include="Elements\Chunks\M2Chunk.cs" />
+    <Compile Include="Elements\Chunks\UnknownChunk.cs" />
+    <Compile Include="M2Data.cs" />
     <Compile Include="MyBinaryWriter.cs" />
     <Compile Include="Structures\C2Vector.cs" />
     <Compile Include="Structures\C3Vector.cs" />
@@ -88,7 +91,7 @@
     <Compile Include="Elements\Vertex.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="M2.cs" />
-    <Compile Include="M2Data.cs" />
+    <Compile Include="Elements\Chunks\MD21Chunk.cs" />
     <Compile Include="Structures\SVolume.cs" />
   </ItemGroup>
   <ItemGroup>

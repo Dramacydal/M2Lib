@@ -59,12 +59,8 @@ namespace Test
         {
             {
                 var model = new M2();
-                model.Load(File.OpenRead(@"E:\m2work\test\PandarenYetiMount.m2"));
-                Console.WriteLine(WTF.MaxOffs);
-                model.Save(File.Open(@"E:\m2work\test\PandarenYetiMount_conv.m2", FileMode.Create));
+                model.Load(File.OpenRead(@"E:\m2work\legion\Character\Tauren\Male\TaurenMale_HD.M2"));
 
-                var model2 = new M2();
-                model2.Load(File.OpenRead(@"E:\m2work\test\PandarenYetiMount_conv.m2"));
 
                 return;
             }
